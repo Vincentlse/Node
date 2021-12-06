@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%= include('partials/head'); %>
+</head>
+<body class="container">
+    <header>
+        <%= include('partials/header'); %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>AFPA 2021</h1>
+            <p>Welcome les futurs DevOps</p>
+            <% if(locals.result1) { %>
+            <p>result: <%= p1 %></p>
+            <% } %>
+            <% if(locals.result2){ %>}
+            <p>result: <%= p2 %></p>
+            <% } %>
+        </div>
+    </main>
+    <footer>
+        <%= include('partials/footer'); %>
+    </footer>
+</body>
+</html>
